@@ -1,0 +1,15 @@
+spring:
+#  jpa:
+#    hibernate:
+#      ddl-auto: create
+  datasource:
+    # 路径要注意SSL,暂时先排除
+    url: jdbc:mysql://localhost:3306/clouddb?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+    username: root
+    password: 
+    #driver-class-name: com.mysql.jdbc.Driver
+    #type: org.apache.commons.dbcp2.BasicDataSource
+  application:
+      name: tcc-goods
+server:
+  port: 12000
